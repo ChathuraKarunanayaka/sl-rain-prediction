@@ -1,0 +1,4 @@
+,MAE_mm,RMSE_mm
+SARIMA only,73.1,96.6
+Random Forest only,81.8,101.2
+Hybrid SARIMA + RF,70.9,94.4

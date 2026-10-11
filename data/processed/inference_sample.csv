@@ -1,0 +1,2 @@
+date,city,temperature_2m_max,temperature_2m_min,temperature_2m_mean,shortwave_radiation_sum,rain_sum,precipitation_hours,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant,et0_fao_evapotranspiration,rain_yesterday,rain_2_days_ago,rain_last_7_days,latitude,longitude,elevation,rain_last_3_days_mean,temp_range,wind_dir_sin,wind_dir_cos,month,day_of_year_sin,day_of_year_cos,monsoon_season,rain_tomorrow
+2023-06-16,Colombo,30.2,26.5,28.2,18.37,6.0,24.0,21.3,41.0,254,3.89,3.9,8.9,73.6,7.0,79.9,16.0,6.2667,3.7,-0.9613,-0.2756,6,0.2656,-0.9641,Southwest monsoon,1

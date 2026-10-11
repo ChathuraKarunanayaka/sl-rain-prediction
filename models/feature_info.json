@@ -1,0 +1,313 @@
+{
+  "model_name": "Soft-voting ensemble (Random Forest + XGBoost)",
+  "target": "rain_tomorrow",
+  "class_labels": {
+    "0": "No rain",
+    "1": "Rain"
+  },
+  "rain_threshold_mm": 1.0,
+  "raw_input_fields": {
+    "date": {
+      "type": "date"
+    },
+    "city": {
+      "type": "category",
+      "allowed_values": [
+        "Athurugiriya",
+        "Badulla",
+        "Bentota",
+        "Colombo",
+        "Galle",
+        "Gampaha",
+        "Hambantota",
+        "Hatton",
+        "Jaffna",
+        "Kalmunai",
+        "Kalutara",
+        "Kandy",
+        "Kesbewa",
+        "Kolonnawa",
+        "Kurunegala",
+        "Mabole",
+        "Maharagama",
+        "Mannar",
+        "Matale",
+        "Matara",
+        "Moratuwa",
+        "Mount Lavinia",
+        "Negombo",
+        "Oruwala",
+        "Pothuhera",
+        "Puttalam",
+        "Ratnapura",
+        "Sri Jayewardenepura Kotte",
+        "Trincomalee",
+        "Weligama"
+      ]
+    },
+    "temperature_2m_max": {
+      "type": "number",
+      "min": 17.5,
+      "max": 37.5,
+      "median": 29.2
+    },
+    "temperature_2m_min": {
+      "type": "number",
+      "min": 12.1,
+      "max": 30.0,
+      "median": 24.3
+    },
+    "temperature_2m_mean": {
+      "type": "number",
+      "min": 16.3,
+      "max": 31.8,
+      "median": 26.4
+    },
+    "shortwave_radiation_sum": {
+      "type": "number",
+      "min": 1.23,
+      "max": 28.98,
+      "median": 19.18
+    },
+    "rain_sum": {
+      "type": "number",
+      "min": 0.0,
+      "max": 338.8,
+      "median": 2.5
+    },
+    "precipitation_hours": {
+      "type": "number",
+      "min": 0.0,
+      "max": 24.0,
+      "median": 7.0
+    },
+    "windspeed_10m_max": {
+      "type": "number",
+      "min": 2.2,
+      "max": 50.2,
+      "median": 15.1
+    },
+    "windgusts_10m_max": {
+      "type": "number",
+      "min": 12.2,
+      "max": 90.7,
+      "median": 33.5
+    },
+    "winddirection_10m_dominant": {
+      "type": "number",
+      "min": 0.0,
+      "max": 360.0,
+      "median": 216.0
+    },
+    "et0_fao_evapotranspiration": {
+      "type": "number",
+      "min": 0.42,
+      "max": 8.14,
+      "median": 3.9
+    },
+    "rain_yesterday": {
+      "type": "number",
+      "min": 0.0,
+      "max": 338.8,
+      "median": 2.5
+    },
+    "rain_2_days_ago": {
+      "type": "number",
+      "min": 0.0,
+      "max": 338.8,
+      "median": 2.5
+    },
+    "rain_last_7_days": {
+      "type": "number",
+      "min": 0.0,
+      "max": 622.7,
+      "median": 28.9
+    }
+  },
+  "city_locations": [
+    {
+      "city": "Athurugiriya",
+      "latitude": 6.9,
+      "longitude": 79.9,
+      "elevation": 27.0
+    },
+    {
+      "city": "Badulla",
+      "latitude": 7.1,
+      "longitude": 81.1,
+      "elevation": 652.0
+    },
+    {
+      "city": "Bentota",
+      "latitude": 6.5,
+      "longitude": 80.0,
+      "elevation": 10.0
+    },
+    {
+      "city": "Colombo",
+      "latitude": 7.0,
+      "longitude": 79.9,
+      "elevation": 16.0
+    },
+    {
+      "city": "Galle",
+      "latitude": 6.1,
+      "longitude": 80.2,
+      "elevation": 15.0
+    },
+    {
+      "city": "Gampaha",
+      "latitude": 7.1,
+      "longitude": 80.0,
+      "elevation": 15.0
+    },
+    {
+      "city": "Hambantota",
+      "latitude": 6.2,
+      "longitude": 81.2,
+      "elevation": 12.0
+    },
+    {
+      "city": "Hatton",
+      "latitude": 6.9,
+      "longitude": 80.6,
+      "elevation": 1281.0
+    },
+    {
+      "city": "Jaffna",
+      "latitude": 9.7,
+      "longitude": 80.0,
+      "elevation": 5.0
+    },
+    {
+      "city": "Kalmunai",
+      "latitude": 7.4,
+      "longitude": 81.8,
+      "elevation": 8.0
+    },
+    {
+      "city": "Kalutara",
+      "latitude": 6.6,
+      "longitude": 80.0,
+      "elevation": 0.0
+    },
+    {
+      "city": "Kandy",
+      "latitude": 7.3,
+      "longitude": 80.6,
+      "elevation": 510.0
+    },
+    {
+      "city": "Kesbewa",
+      "latitude": 6.8,
+      "longitude": 79.9,
+      "elevation": 18.0
+    },
+    {
+      "city": "Kolonnawa",
+      "latitude": 6.9,
+      "longitude": 79.9,
+      "elevation": 13.0
+    },
+    {
+      "city": "Kurunegala",
+      "latitude": 7.5,
+      "longitude": 80.4,
+      "elevation": 124.0
+    },
+    {
+      "city": "Mabole",
+      "latitude": 7.0,
+      "longitude": 79.9,
+      "elevation": 16.0
+    },
+    {
+      "city": "Maharagama",
+      "latitude": 6.8,
+      "longitude": 79.9,
+      "elevation": 26.0
+    },
+    {
+      "city": "Mannar",
+      "latitude": 8.9,
+      "longitude": 80.0,
+      "elevation": 6.0
+    },
+    {
+      "city": "Matale",
+      "latitude": 7.6,
+      "longitude": 80.6,
+      "elevation": 376.0
+    },
+    {
+      "city": "Matara",
+      "latitude": 6.0,
+      "longitude": 80.4,
+      "elevation": 7.0
+    },
+    {
+      "city": "Moratuwa",
+      "latitude": 6.8,
+      "longitude": 79.9,
+      "elevation": 9.0
+    },
+    {
+      "city": "Mount Lavinia",
+      "latitude": 6.9,
+      "longitude": 79.9,
+      "elevation": 10.0
+    },
+    {
+      "city": "Negombo",
+      "latitude": 7.1,
+      "longitude": 79.9,
+      "elevation": 5.0
+    },
+    {
+      "city": "Oruwala",
+      "latitude": 6.9,
+      "longitude": 80.0,
+      "elevation": 20.0
+    },
+    {
+      "city": "Pothuhera",
+      "latitude": 7.4,
+      "longitude": 80.3,
+      "elevation": 125.0
+    },
+    {
+      "city": "Puttalam",
+      "latitude": 8.0,
+      "longitude": 79.8,
+      "elevation": 0.0
+    },
+    {
+      "city": "Ratnapura",
+      "latitude": 6.8,
+      "longitude": 80.3,
+      "elevation": 27.0
+    },
+    {
+      "city": "Sri Jayewardenepura Kotte",
+      "latitude": 6.9,
+      "longitude": 79.9,
+      "elevation": 7.0
+    },
+    {
+      "city": "Trincomalee",
+      "latitude": 8.6,
+      "longitude": 81.2,
+      "elevation": 7.0
+    },
+    {
+      "city": "Weligama",
+      "latitude": 6.0,
+      "longitude": 80.4,
+      "elevation": 5.0
+    }
+  ],
+  "training_period": [
+    "2010-01-07",
+    "2020-10-07"
+  ]
+}

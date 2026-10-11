@@ -1,0 +1,5 @@
+monsoon_season,Random Forest,XGBoost,Soft Voting,Stacking,Baseline (same as today),rain_share,test_rows
+First inter-monsoon,0.7528,0.7568,0.7552,0.7896,0.7676,0.7089,5490
+Northeast monsoon,0.6959,0.7022,0.7004,0.7232,0.7212,0.4779,8100
+Second inter-monsoon,0.8576,0.8523,0.8587,0.8525,0.8544,0.8165,5280
+Southwest monsoon,0.8655,0.8701,0.8659,0.8808,0.8592,0.8111,10589

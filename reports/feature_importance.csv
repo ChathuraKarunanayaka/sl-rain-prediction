@@ -1,0 +1,57 @@
+,Random Forest,XGBoost
+rain_sum,0.4045,0.3497
+precipitation_hours,0.2928,0.3018
+season: Northeast monsoon,0.0067,0.039
+rain_last_3_days_mean,0.0996,0.0362
+rain_last_7_days,0.025,0.0288
+month,0.018,0.0272
+et0_fao_evapotranspiration,0.0255,0.0188
+day_of_year_cos,0.0173,0.0183
+longitude,0.0033,0.0172
+latitude,0.0046,0.0162
+windspeed_10m_max,0.0113,0.0157
+rain_2_days_ago,0.0094,0.0149
+season: Second inter-monsoon,0.0008,0.0147
+temp_range,0.0041,0.0145
+day_of_year_sin,0.0097,0.0111
+rain_yesterday,0.0389,0.0106
+windgusts_10m_max,0.0054,0.0102
+shortwave_radiation_sum,0.0054,0.0099
+temperature_2m_mean,0.002,0.0086
+temperature_2m_min,0.0024,0.0085
+wind_dir_cos,0.005,0.0085
+wind_dir_sin,0.0041,0.0068
+temperature_2m_max,0.0023,0.0066
+elevation,0.0007,0.004
+city: Trincomalee,0.0,0.0025
+city: Jaffna,0.0,0.0
+city: Badulla,0.0,0.0
+city: Hatton,0.0,0.0
+city: Matara,0.0,0.0
+city: Galle,0.0,0.0
+city: Athurugiriya,0.0,0.0
+city: Matale,0.0,0.0
+city: Kalutara,0.0,0.0
+city: Sri Jayewardenepura Kotte,0.0,0.0
+city: Kolonnawa,0.0,0.0
+city: Kesbewa,0.0,0.0
+city: Moratuwa,0.0,0.0
+city: Oruwala,0.0,0.0
+city: Mount Lavinia,0.0,0.0
+city: Weligama,0.0,0.0
+city: Negombo,0.0,0.0
+city: Ratnapura,0.0,0.0
+city: Maharagama,0.0,0.0
+city: Mabole,0.0,0.0
+city: Bentota,0.0,0.0
+city: Colombo,0.0,0.0
+city: Gampaha,0.0,0.0
+city: Pothuhera,0.0,0.0
+season: Southwest monsoon,0.0009,0.0
+city: Puttalam,0.0,0.0
+city: Kandy,0.0,0.0
+city: Kalmunai,0.0,0.0
+city: Kurunegala,0.0,0.0
+city: Mannar,0.0001,0.0
+city: Hambantota,0.0001,0.0
+season: First inter-monsoon,0.0002,0.0

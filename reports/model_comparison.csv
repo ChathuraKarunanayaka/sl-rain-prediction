@@ -1,0 +1,6 @@
+model,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc,train_accuracy,training_time_s,train_minus_test_accuracy
+Baseline (same as today),0.8033,0.7652,0.7653,0.7653,0.8034,0.8033,0.8033,,0.8179,0.0,0.0146
+Random Forest,0.7965,0.7609,0.7882,0.7702,0.8134,0.7965,0.8015,0.8732,0.8325,5.0353,0.0361
+XGBoost,0.7996,0.7634,0.7879,0.7723,0.8137,0.7996,0.8041,0.8753,0.8268,2.7222,0.0271
+Soft Voting,0.7985,0.7626,0.7886,0.7717,0.8139,0.7985,0.8032,0.875,0.8298,7.2732,0.0313
+Stacking,0.8154,0.7804,0.7747,0.7774,0.8137,0.8154,0.8145,0.875,0.8392,30.5775,0.0238
